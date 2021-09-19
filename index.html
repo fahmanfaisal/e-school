@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>E-School-Management System</title>
+    <style>
+        .mystyle {
+            display: block;
+        }
+    </style>
+    <script>
+        function myFunction() {
+           var element = document.getElementById("myDIV");
+           element.classList.toggle("mystyle");
+        }
+    </script>
+</head>
+<body>
+    <div class="mx-auto p-2 bg-green-100 min-h-screen">
+        <nav class="flex items-center text-black font-semibold p-3 flex-wrap md:px-20">
+            <img class="h-12 w-40 md:mt-4" src="images/ICON/Logo.png" alt="">
+
+            <button onclick="myFunction()" class="nav-toggler p-2 focus:outline-none focus:bg-gray-700 text-black font-bold inline-flex hover:bg-green-900 rounded transition duration-500 hover:text-white hover:font-bold md:hidden ml-auto" data-target="#navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+            </button>
+            <div id="myDIV" class=" hidden top-nav w-full md:inline-flex md:flex-grow md:w-auto" id="navigation">
+                <div class="flex flex-col mt-2 md:inline-flex md:flex-row md:ml-auto md:items-center">
+                    <a href="#" class="md:inline-flex md:w-auto px-3 py-2 rounded">
+                        <span>Book</span>
+                    </a>
+                    <a href="#" class="md:inline-flex md:w-auto px-3 py-2 rounded">
+                        <span>Cources</span>
+                    </a>
+                    <a href="#" class="md:inline-flex md:w-auto px-3 py-2 rounded">
+                        <span>Others</span>
+                    </a>
+                    <a href="#" class="md:inline-flex md:w-auto px-3 py-2 rounded">
+                        <span>Blog</span>
+                    </a>
+                    <button class="bg-green-600 rounded-full w-20 mt-2 px-4 py-2 ml-2 md:mb-2 text-white">SignIn</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="px-5 py-8 md:px-20 md:grid md:grid-flow-col md:grid-cols-2 grid-rows-1 gap-4 md:items-center">
+            <div class="pb-5">
+                <p class="text-sm lg:text-base text-red-400">Are you ready to Learn?</p>
+                <p class="text-3xl lg:text-5xl text-black font-bold py-2 ">Learn With fun 
+                <br>on <span class="text-green-600">any schedule</span></p>
+                <p class="text-sm py-3 lg:py-6 xl-pr-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis quam netus.</p>
+                <button class="bg-green-600 rounded-full px-3 mt-3 py-2 text-sm md:text-base text-white">Get Started</button>
+            </div>
+            <div>
+                <img class="md:w-auto" src="images/Photos/Illustration.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class=" bg-gray-50">
+        <div class="pt-5 mb-10 grid place-items-center text-center  md:grid-flow-col md:grid-cols-4 md:grid-rows-1 lg:px-20">
+            <div class="py-8 px-10 mb-5 bg-green-50 rounded hover:shadow-md hover:bg-white hover:transition duration-500">
+                <img class="w-20 h-auto pl-2 " src="images/ICON/book.png" alt="">
+                <p class="md:text-base text-sm text-gray-600 font-medium pt-2">1500+ Topics</p>
+                <p class="text-xs text-gray-700">Learn Anythings</p>
+            </div>
+            <div class="py-8 px-10 mb-5 bg-green-50 rounded hover:shadow-md hover:bg-white hover:transition duration-500">
+                <img class="w-20 h-auto pl-2 " src="images/ICON/Student.png" alt="">
+                <p class="md:text-base text-sm text-gray-600 font-medium pt-2">200+ Student</p>
+                <p class="text-xs text-gray-700">Learn Anythings</p>
+            </div>
+            <div class="py-8 px-10 mb-5 bg-green-50 rounded hover:shadow-md hover:bg-white hover:transition duration-500">
+                <img class="w-20 h-auto pl-2 " src="images/ICON/Test.png" alt="">
+                <p class="md:text-base text-sm text-gray-600 font-medium pt-2">9000K+ Tests </p>
+                <p class="text-xs text-gray-700">Learn Anythings</p>
+            </div>
+            <div class="py-8 px-10 mb-5 bg-green-50 rounded hover:shadow-md hover:bg-white hover:transition duration-500">
+                <img class="w-20 h-auto pl-2 " src="images/ICON/Students.png" alt="">
+                <p class="md:text-base text-sm text-gray-600 font-medium pt-2">18+ Students</p>
+                <p class="text-xs text-gray-700">Learn Anythings</p>
+            </div>
+        </div>
+        <div class="text-center pb-12 text-2xl lg:text-3xl font-bold">
+            <p>Online Courses</p>
+        </div>
+        <div class="pb-5  grid md:grid-flow-col md:grid-cols-3 gap-3 lg:px-20 transition duration-500">
+            <div class="px-6 py-5 bg-white hover:bg-white hover:shadow-md rounded">
+                <img class="w-60 h-auto" src="images/Photos/Morder pyschology.png" alt="">
+                <p class="font-semibold py-2 ">Modern Psychology</p>
+                <p class="text-sm pb-2">Designation</p>
+                <button class="bg-green-600 rounded-full px-4 mt-2 py-1 text-sm  text-white">Buy Course</button>
+                <div class="flex justify-between py-4 text-gray-600 font-semibold">
+                    <div class="flex items-center mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        <p class="text-xs ml-1">Start 20  April, 2021</p>
+                    </div>
+                    <div class="flex items-center px-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                        <p class="text-xs">60 seats</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-5 bg-white hover:bg-white hover:shadow-md rounded transition duration-500">
+                <img class="w-60 h-auto" src="images/Photos/Morder psyc.png" alt="">
+                <p class="font-semibold py-2 ">Modern Psychology</p>
+                <p class="text-sm pb-2">Designation</p>
+                <button class="bg-green-600 rounded-full px-4 mt-2 py-1 text-sm  text-white">Buy Course</button>
+                <div class="flex justify-between py-4 text-gray-600 font-semibold">
+                    <div class="flex items-center mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        <p class="text-xs ml-1">Start 20  April, 2021</p>
+                    </div>
+                    <div class="flex items-center px-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                        <p class="text-xs">60 seats</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-5 bg-white hover:bg-white hover:shadow-md rounded transition duration-500">
+                <img class="w-60 h-auto" src="images/Photos/Morder pychons.png" alt="">
+                <p class="font-semibold py-2 ">Modern Psychology</p>
+                <p class="text-sm pb-2">Designation</p>
+                <button class="bg-green-600 rounded-full px-4 mt-2 py-1 text-sm  text-white">Buy Course</button>
+                <div class="flex justify-between py-4 text-gray-600 font-semibold">
+                    <div class="flex items-center mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        <p class="text-xs ml-1">Start 20  April, 2021</p>
+                    </div>
+                    <div class="flex items-center px-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-4 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                          </svg>
+                        <p class="text-xs">60 seats</p>
+                    </div>
+                </div>
+            </div>        
+    </div>
+    <div class="text-center pb-12 pt-8 text-2xl lg:text-3xl font-bold">
+        <p>Testimonial</p>
+    </div>
+    <div class="pb-20 px-8 md:px-12 lg:px-20 grid grid-cols-3  md:grid-flow-col md:grid-cols-3 md:grid-rows-1 md:place-items-center md:justify-items-end md:gap-4">
+        <div>
+            <img class="w-20" src="images/Photos/Man.png" alt="">
+        </div>
+        <div class="col-span-2">
+            <p>There are many variations of passages of Lorem Ipsum available, but the
+                majority have suffered alteration in some form, by injected humour, 
+               or randomised words which don't look even slightly believable.</p>
+        </div>
+    </div>
+    <div class="px-5 md:px-12  lg:px-32 xl:px-52 bg-gray-800 text-white py-10 grid gap-2 md:grid-flow-col md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center justify-items-center ">
+        <div class="col-span-2">
+            <p class="">Millions of people of all ages and from around
+                the world are improving their lives with us</p>
+        </div>
+        <div class="cursor-pointer">
+            <p class="text-base font-semibold">Course</p>
+            <p class="text-sm">Graphic Design</p>
+            <p class="text-sm">Web Design</p>
+            <p class="text-sm">Business</p>
+            <p class="text-sm">Marketing</p>
+            <p class="text-sm"></p>
+        </div>
+        <div class="cursor-pointer">
+            <p class="text-base font-semibold">Terms</p>
+            <p class="text-sm">Graphic Design</p>
+            <p class="text-sm">Web Design</p>
+            <p class="text-sm">Business</p>
+            <p class="text-sm">Marketing</p>
+            <p class="text-sm"></p>
+        </div>
+        <div class="cursor-pointer">
+            <p class="text-base font-semibold">Useful Link</p>
+            <p class="text-sm">Graphic Design</p>
+            <p class="text-sm">Web Design</p>
+            <p class="text-sm">Business</p>
+            <p class="text-sm">Marketing</p>
+            <p class="text-sm"></p>
+        </div>
+    </div>
+    <div class="pb-5 text-center text-sm  text-gray-300 bg-gray-800">
+        <p>Copyright © 2020 Rokomari.com</p>
+    </div>
+</div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
